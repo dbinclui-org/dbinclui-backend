@@ -7,7 +7,7 @@ const CategoriesSchema = new Schema<Categories>(
     title: String,
     shortDescription: String,
     guide: { type: Schema.Types.ObjectId, ref: 'Guides' },
-    parentCategory: { type: Schema.Types.ObjectId, ref: 'Categories' }, // Acredito que dê pra referênciar a própria tabela assim
+    parentCategory: { type: Schema.Types.ObjectId, ref: 'Categories' },
   },
   { timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } },
 );
